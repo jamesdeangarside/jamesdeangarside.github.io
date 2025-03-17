@@ -412,7 +412,22 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 						</header>
 						<div class="content">
 							<p><strong>Auctor commodo</strong> interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>
-							<form action="https://formspree.io/f/xgvavkgz" method="POST">
+					
+							<form action="https://api.web3forms.com/submit" method="POST">
+
+								<input type="hidden" name="access_key" value="c6cb56da-bee8-412b-870c-3c8ddbf18890">
+							
+								<input type="text" name="name" required>
+								<input type="email" name="email" required>
+								<textarea name="message" required></textarea>
+								<input type="hidden" name="redirect" value="https://jamesgarside.net">
+								<button type="submit">Submit Form</button>
+							
+							</form>
+					
+					
+							<!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="c6cb56da-bee8-412b-870c-3c8ddbf18890">
 								<div class="fields">
 									<div class="field half">
 										<input type="text" name="name" id="name" placeholder="Name" />
@@ -425,6 +440,13 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 									</div>
 								</div>
 								<ul class="actions">
+
+									 <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+    <!-- Custom Confirmation / Success Page -->
+    <input type="hidden" name="redirect" value="https://jamesgarside.net">
+
 									<li><input type="submit" value="Send Message" class="button primary" /></li>
 								</ul>
 							</form>
@@ -472,15 +494,6 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			
-
-			<script>
-				window.onbeforeunload = () => {
-				  for (const form of document.getElementsByTagName('form')) {
-					form.reset();
-				  }
-				}
-				</script>
 
 		</body>
 </html>
