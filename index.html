@@ -475,11 +475,8 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 			<script src="assets/js/clear-form.min.js"></script>
 
 			<script>
-				if (window.location.search.includes("nocache=true")) {
-					document.addEventListener("DOMContentLoaded", function() {
-						document.querySelector("form").reset();
-						history.replaceState({}, document.title, window.location.pathname);
-					});
+				if (performance.navigation.type === 2) {
+					location.reload(true);
 				}
 			</script>
 
