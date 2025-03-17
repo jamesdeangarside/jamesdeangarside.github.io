@@ -414,16 +414,28 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 							<p><strong>Auctor commodo</strong> interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>
 					
 							<form action="https://api.web3forms.com/submit" method="POST">
-
-								<input type="hidden" name="access_key" value="c6cb56da-bee8-412b-870c-3c8ddbf18890">
-							
-								<input type="text" name="name" required>
-								<input type="email" name="email" required>
-								<textarea name="message" required></textarea>
-								<input type="hidden" name="redirect" value="https://jamesgarside.net">
-								<button type="submit">Submit Form</button>
-							
-							</form>
+		<!-- REQUIRED: Web3Forms Access Key -->
+								<input type="hidden" name="access_key" value="c6cb56da-bee8-412b-870c-3c8ddbf18890">								
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" required>
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" required>
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message" rows="7" required></textarea>
+										</div>
+									</div>
+								
+									<!-- Spam Protection -->
+									<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+								
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="button primary"></li>
+									</ul>
+									<input type="hidden" name="redirect" value="https://jamesgarside.net">
+								</form>
 					
 					
 							<!-- Replace with your Access Key -->
