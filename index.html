@@ -474,11 +474,13 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/clear-form.min.js"></script>
 
-			window.onbeforeunload = () => {
-				for(const form of document.getElementsByTagName('form')) {
-				  form.reset();
+			<script>
+				window.onbeforeunload = () => {
+				  for (const form of document.getElementsByTagName('form')) {
+					form.reset();
+				  }
 				}
-			  }
+				</script>
 
 		</body>
 </html>
