@@ -473,5 +473,15 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/clear-form.min.js"></script>
-	</body>
+
+			<script>
+				if (window.location.search.includes("nocache=true")) {
+					document.addEventListener("DOMContentLoaded", function() {
+						document.querySelector("form").reset();
+						history.replaceState({}, document.title, window.location.pathname);
+					});
+				}
+			</script>
+
+		</body>
 </html>
