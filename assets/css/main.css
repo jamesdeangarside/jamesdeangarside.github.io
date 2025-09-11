@@ -3879,3 +3879,14 @@ input, select, textarea {
 		}
 
 	}
+
+	/* Override the JavaScript fade-in with faster animation */
+.intro header h1 {
+    opacity: 1 !important;
+    animation: fadeIn 0.8s ease-in-out 0.2s both !important;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
