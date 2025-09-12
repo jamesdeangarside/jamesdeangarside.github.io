@@ -23,8 +23,7 @@
 	// Play initial animations on page load.
 	 	$window.on('load', function() {
     $body.removeClass('is-preload');
-    // Remove setTimeout entirely
-	// });
+    });
 
 	// Hack: Enable IE workarounds.
 		if (browser.name == 'ie')
