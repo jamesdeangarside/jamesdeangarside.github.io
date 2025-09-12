@@ -21,15 +21,10 @@
 		});
 
 	// Play initial animations on page load.
-	// 	$window.on('load', function() {
-   //  window.setTimeout(function() {
-      //   $body.removeClass('is-preload');
-   //  }, 0); // ← Change from 100 to 10 or 0
-// });
-
-		$(document).ready(function() {
-    	$body.removeClass('is-preload');
-		});
+	 	$window.on('load', function() {
+    $body.removeClass('is-preload');
+    // Remove setTimeout entirely
+});
 
 	// Hack: Enable IE workarounds.
 		if (browser.name == 'ie')
