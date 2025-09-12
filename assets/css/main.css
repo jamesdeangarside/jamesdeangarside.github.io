@@ -1,3 +1,8 @@
+/* Add this to your main.css file */
+@font-face {
+  font-display: swap;
+}
+
 /* @import url(fontawesome-all.min.css); */  /* ← Commented out - already in compiled CSS */ 
 
 /*
